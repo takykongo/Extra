@@ -20,6 +20,25 @@ if(myAge > yourAge){
 }
 
 // 3- If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
-
+// If else
+let a = 4
+let b = 3
+if(a > b){
+    console.log('a is greater than b')
+}else{
+    console.log('a is less than b')
+}
+//ternary operator
+a
+    ?  console.log('a is greater than b')
+    :  console.log('a is less than b')
 
 // 4- Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
+
+let num = prompt('Enter a number: ')
+let numm = num % 2
+if(numm == 0){
+    console.log(`${num} is an even number`)
+}else{
+    console.log(`${num} is an odd number`)
+}

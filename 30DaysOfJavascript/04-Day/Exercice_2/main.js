@@ -32,19 +32,43 @@ March, April or May, the season is Spring
 June, July or August, the season is Summer*/
 let saison = prompt('Enter the month')
 let saisons = saison.toLowerCase()
-switch(saisons){
-    case 'september' || 'october' || 'november':
-        console.log('The season is Autumn.')
-        break
-    case 'january' || 'february' || 'december':
-        console.log('The season is Winter.')
-        break
-    case 'march' || 'april' || 'may':
-        console.log('The season is Spring.')
-        break
-    case 'june' || 'july' || 'august':
-        console.log('The season is Summer.')
-        break
-    default:
+
+if((saisons == 'september')||(saisons == 'october')||(saisons == 'november'))
+{
+    console.log('The season is Autumn.')
+}else if((saisons == 'january')||(saisons == 'february')||(saisons == 'december'))
+{
+    console.log('The season is Winter.')
+}else if((saisons == 'march')||(saisons == 'april')||(saisons == 'may'))
+{
+    console.log('The season is Spring.')
+}else if((saisons == 'june')||(saisons == 'july')||(saisons == 'august'))
+{
+    console.log('The season is Summer.')
+}else{
         console.log('Enter one month')
+}
+
+/** 3- Check if a day is weekend day or a working day. Your script will take day as an input.
+    What is the day  today? Saturday
+    Saturday is a weekend.
+
+    What is the day today? saturDaY
+    Saturday is a weekend.
+
+    What is the day today? Friday
+    Friday is a working day.
+
+    What is the day today? FrIDAy
+    Friday is a working day. */
+
+let days = prompt('What is the day  today ?')
+let dayss = days.toLowerCase()
+
+if((dayss == 'monday')||(dayss =='tuesday')||(dayss =='wednesday')||(dayss =='thursday'||dayss =='friday')){
+    console.log(`${days} is a working day.`)
+}else if((dayss =='saturday'||dayss =='sunday')){
+    console.log(`${days} is a weekend.`)
+}else{
+    console.log('Enter a day')
 }
